@@ -23,11 +23,31 @@
 def bubble_sort(m_list: list) -> list:
     n = len(m_list)
     for i in range(n):
-    already_stoped = True:
+        already_stoped = True:
     for j in range(n - i - 1):
         if m_list[j] > m_list[j + 1]:
             m_list[j], m_list[j + 1] = m_list[j + 1], m_list[j]
             alredy_stoped = False
         if already_stoped:
-            break  
+            break
+    return m_list
+```
+### Selection Sort 
+| Название                               | Лучшее время | Среднее время | Худшее время | Память |
+|----------------------------------------|--------------|---------------|--------------|--------|
+ | Сортировака выбором <br/>(Bubble Sort) | O(n^2)       | On(n^2)       | O(n^2)       | O(1)   |
+|                                        |              |               |              |        |
+|                                        |              |               |              |        |
+
+
+```
+def selection_sort(m_list: list) -> list:
+    n = len(m_list)
+    for i in range(n):
+        minimum = i:
+        for j in range(i + 1, n):
+            if m_list[j] > m_list[minimum]:
+                minumum = j
+        m_list[i], m_list[minimum] = m_list[minimum], m_list[i]
+    return m_list
 ```
