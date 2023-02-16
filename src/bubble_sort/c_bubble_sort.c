@@ -1,6 +1,7 @@
 #include <stdio.h>
 
 int * c_bubble_sort(int *array, int size) {
+     printf("Hello World\n");
      int i, j, already_sorted, temp;
     for (i = 0; i < size - 1; i++) {
         already_sorted = 1;  

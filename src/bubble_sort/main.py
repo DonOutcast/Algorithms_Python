@@ -2,11 +2,23 @@ import time
 from m_bubble_sort import bubble_sort_c
 from bubble import bubble_sort
 from ctypes import *
-
+import typing
 if __name__ == "__main__":
     so_file = "my_c_bubble_sort.so"
     my_fun = cdll.LoadLibrary(so_file)
-    print(my_fun())
+    m = my_fun.c_bubble_sort
+    m()
+
+    # m()
+    # py_values = [1, 2, 3, 4]
+    # arr = (c_int * len(py_values))(*py_values)
+    #
+    #
+    # def foo(aqs: typing.List[int]) -> Array:
+    #     array_type = c_int64 * len(aqs)
+    #     ans = array_type(*aqs)
+    #     return ans
+    # print(m(foo([1,2,3,4]), 4))
     # print(my_fun([1, 2, 3, 4], 4))
     # m_list_ten = [8, 1, 3, 2, 4, 9, 5, 7, 0, 6]
     # print("Test bubble sort with array of numbers size 10 not sorted.")
