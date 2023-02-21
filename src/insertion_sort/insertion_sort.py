@@ -10,7 +10,3 @@ def insertion_sort(array: list) -> list:
             j -= 1
         # Вставляем элемент
         array[j + 1] = item_to_insert
-
-
-if __name__ == "__main__":
-    insertion_sort([2, 1, 5, 7, 6, 8])
