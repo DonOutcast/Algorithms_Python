@@ -4,7 +4,7 @@ from quick_sort import quick_sort
 
 if __name__ == "__main__":
     m_list_ten = [8, 1, 3, 2, 4, 9, 5, 7, 0, 6]
-    print("Test bubble sort with array of numbers size 10 not sorted.")
+    print("Test quick sort with array of numbers size 10 not sorted.")
     start = time.monotonic()
     quick_sort_c(m_list_ten, 10)
     stop = time.monotonic()
